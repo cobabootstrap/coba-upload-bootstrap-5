@@ -1,175 +1,63 @@
-.jumbotron {
-	padding-top: 6rem;
-	background-color: #e2edff;
-}
-
-#projects {
-	background-color: #e2edff;
-}
-
-#producer .container .row .col-md-4 > h1 {
-	margin-left: 80px;
-}
-
-#producer .container .row .col-md-4 #wpu {
-	margin-left: 130px;
-}
-
-#friends {
-	background-color: #e2edff;
+body {
+    background-image: url("img/WIN_20211121_19_29_33_Pro.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section {
-	padding-top: 5em;
+    padding-top: 5pc;
 }
 
-h2 {
-	text-shadow: 1px 2px solid #eaeaea;
+#clients h2 {
+    transition: 0.4s;
 }
 
-.jumbotron .display-4 {
-	font-weight: 400;
-	animation: rightToCenter 2s;
+#clients h2:hover {
+    text-shadow: 4px 1px 1px white;
 }
 
-.jumbotron .lead {
-	font-weight: 400;
-	animation: leftToCenter 2s;
+#about h2 {
+    transition: 0.4s;
 }
 
-.jumbotron img {
-	border: 1px solid white;
-	padding: 1px 1px 1px 1px;
+#about h2:hover {
+    text-shadow: 4px 1px 1px white;
 }
 
-#skills {
-	background-color: #e2edff;
+#contact h2 {
+    transition: 0.4s;
 }
 
-/*animasi*/
-@keyframes rightToCenter {
-	0% {
-		margin-right: 100px;
-		opacity: 0;
-	}
-
-	100% {
-		margin-right: 0;
-		opacity: 1;
-	}
+#contact h2:hover {
+    text-shadow: 4px 1px 1px white;
 }
 
-@keyframes leftToCenter {
-	0% {
-		margin-right: -100px;
-		opacity: 0;
-	}
-
-	100% {
-		margin-right: 0;
-		opacity: 1;
-	}
+#gallery h2 {
+    transition: 0.4s;
 }
 
-/*DESKTOP VERSION*/
-@media (min-width: 992px) {
-	#producer .container .row .col-md-4 > h1 {
-		margin-left: 3pc;
-	}
+#gallery h2:hover {
+    text-shadow: 4px 1px 1px white;
 }
 
-@media (min-width: 992px) {
-	#producer .container .row .col-md-4 #wpu {
-		margin-left: 119px;
-	}
+#gallery img {
+    transform: rotate(0) rotateX(0) rotateY(0);
+    transition: 1s;
 }
 
-
-/* My Keyboard Section */
-.keyboard-box {
-	position: relative;
-	background-color: #0C6EFD;
-	border-radius: 10px;
-	height: 500px;
-	transform-style: preserve-3d;
+#gallery .col-md-4:hover img {
+    transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
 }
 
-.keyboard-box::before {
-	content: 'MY';
-	position: absolute;
-	color: #fff;
-	font-size: 6em;
-	font-weight: bold;
-	font-style: italic;
-	top: 30px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	opacity: 0;
-	transition: 0.5s;
+.footer .email {
+    transition: 0.5s;
+    font-family: monospace;
+    margin-bottom: 1pc;
 }
 
-.keyboard-box:hover::before {
-	opacity: 0.2;
-}
-
-.keyboard-box::after {
-	content: 'KEYBOARD';
-	position: absolute;
-	color: #fff;
-	font-size: 4.3em;
-	font-weight: bold;
-	font-style: italic;
-	top: 350px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	opacity: 0;
-	transition: 0.5s;
-}
-
-.keyboard-box:hover::after {
-	opacity: 0.2;
-}
-
-.keyboard-name {
-	top: 0;
-	width: 100%;
-	position: absolute;
-	color: #fff;
-	text-align: center;
-	font-size: 2em;
-	opacity: 0;
-	transform: translate3d(0,0,50px);
-	transition: 0.5s;
-}
-
-.keyboard-box:hover .keyboard-name {
-	top: 20px;
-	opacity: 1;
-}
-
-.button {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate3d(-50%, 0, 101px);
-	opacity: 0;
-	transition: 0.5s;
-}
-
-.keyboard-box:hover .button {
-	opacity: 1;
-	bottom: 20px;
-}
-
-.keyboard-img {
-	position: absolute;
-	top: 52%;
-	left: 50%;
-	transform: translate3d(-50%, -52%, 100px);
-	max-width: 340px;
-	transition: 0.5s;
-}
-
-.keyboard-box:hover .keyboard-img {
-	transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+.footer .email:hover {
+    transform: rotate(-14deg) scale(1.3);
+    color: red;
+    font-weight: 100;
+    font-family: serif;
 }
